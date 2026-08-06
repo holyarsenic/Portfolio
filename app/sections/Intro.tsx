@@ -5,14 +5,13 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 const Intro = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-3xl">
+    <section className="relative w-full overflow-hidden rounded-3xl p-10">
 
       <div className="relative h-55 w-full">
         <Image
           src={Banner}
           alt="Banner"
           fill
-          priority
           className=" w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent" />
@@ -48,7 +47,7 @@ const Intro = () => {
         </div>
 
           <p className="mt-4 w-full text-lg leading-8 text-gray-300">
-            Hi, I&apos;m <span className="text-white font-semibold">Rohan</span>, a
+            Hi, I&apos;m <span className="text-white font-semibold">Rohan</span>, 2nd - year student and a
             passionate Full-Stack Web Developer who enjoys building modern, responsive,
             and user-focused web applications. I love turning ideas into clean,
             high-performance solutions while continuously improving my skills as a
