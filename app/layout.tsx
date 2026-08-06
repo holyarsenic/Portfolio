@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Bitcount_Prop_Single } from "next/font/google";
+import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
 
 const archivoBlack = Archivo_Black({
@@ -12,6 +12,11 @@ const bitcount = Bitcount_Prop_Single({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-bitcount",
+});
+
+const adventPro = Advent_Pro({
+  subsets: ["latin"],
+  variable: "--font-advent-pro",
 });
 
 export const metadata: Metadata = {
@@ -27,9 +32,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${bitcount.variable} h-full antialiased dark`}
+      className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} h-full antialiased dark`}
     >
-      <body className={`${archivoBlack.className} min-h-full flex flex-col items-center`}>{children}</body>
+      <body className={`${adventPro.variable} min-h-full flex flex-col items-center`}>{children}</body>
     </html>
   );
 }
