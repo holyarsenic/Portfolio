@@ -11,9 +11,7 @@ const Intro = () => {
         <Image
           src={Banner}
           alt="Banner"
-          fill
-          sizes="100vw"
-          className="object-cover"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent" />
       </div>
