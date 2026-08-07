@@ -5,19 +5,20 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 const Intro = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-3xl p-10">
+    <section className="relative w-full overflow-hidden rounded-3xl px-10">
 
       <div className="relative h-55 w-full">
         <Image
           src={Banner}
           alt="Banner"
           fill
-          className=" w-full h-full object-cover"
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent" />
       </div>
 
-      <div className="relative -mt-22 pb-8">
+      <div className="relative -mt-22">
 
         <div className="flex flex-col md:flex-row items-center md:items-end gap-5 px-8">
 
@@ -25,6 +26,7 @@ const Intro = () => {
             <Image
               src={Profile}
               alt="Profile"
+              sizes="100vw"
               className="h-30 w-30 rounded-full object-cover"
             />
           </div>
