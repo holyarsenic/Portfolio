@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from 'react';
 import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
 
@@ -32,9 +33,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} h-full antialiased dark`}
+      className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased dark`}
     >
-      <body className={`${adventPro.variable} min-h-full flex flex-col items-center`}>{children}</body>
+      <body className={`${adventPro.variable} min-h-screen`}>
+        {children}
+      </body>
     </html>
   );
 }

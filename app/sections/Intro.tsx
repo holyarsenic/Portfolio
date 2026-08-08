@@ -5,9 +5,9 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 const Intro = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-3xl px-10">
+    <section className="relative w-full overflow-hidden px-10 pt-15 pb-4">
 
-      <div className="relative h-55 w-full">
+      <div className="relative h-60 w-full rounded-3xl">
         <Image
           src={Banner}
           alt="Banner"
@@ -47,7 +47,7 @@ const Intro = () => {
         </div>
 
           <p className="mt-4 w-full text-lg leading-8 text-gray-300">
-            Hi, I&apos;m <span className="text-white font-semibold">Rohan</span>, 2nd - year student and a
+            Hi, I&apos;m <span className="text-white font-semibold">Rohan</span>, a 2nd - year student and
             passionate Full-Stack Web Developer who enjoys building modern, responsive,
             and user-focused web applications. I love turning ideas into clean,
             high-performance solutions while continuously improving my skills as a

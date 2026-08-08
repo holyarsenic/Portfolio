@@ -28,9 +28,9 @@ const contactItems = [
 
 const Contact = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-3xl px-10">
-      <h2 className="text-2xl">Contact</h2>
-      <div className="flex justify-between gap-3 w-full p-3">
+    <section className="relative w-full overflow-hidden rounded-3xl px-10 py-4">
+      <h2 className="text-2xl text-gray-200">Contact</h2>
+      <div className="flex justify-between gap-3 w-full py-2">
 
         {contactItems.map((item, index) => (
           <a
@@ -38,7 +38,7 @@ const Contact = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 text-white hover:text-blue-300 border border-gray-700 hover:border-blue-300 p-2 w-full justify-center transition-colors duration-300"
+            className="flex items-center gap-3 text-gray-500 hover:text-blue-300 border border-gray-500 hover:border-blue-300 p-2 w-full justify-center transition-colors duration-300"
           >
             {item.icon}
             <span>{item.text}</span>
