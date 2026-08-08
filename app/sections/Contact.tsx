@@ -1,5 +1,6 @@
 import { FaEnvelope, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { GrDocumentText } from "react-icons/gr";
+import GithubGraph from "@/components/Github/GithubGraph";
 
 const contactItems = [
   { icon: <FaGithub />, 
@@ -28,9 +29,9 @@ const contactItems = [
 
 const Contact = () => {
   return (
-    <section className="relative w-full overflow-hidden rounded-3xl px-10 py-4">
-      <h2 className="text-2xl text-gray-200">Contact</h2>
-      <div className="flex justify-between gap-3 w-full py-2">
+    <section className="relative w-full overflow-hidden px-10 py-4">
+      <h2 className="w-full text-3xl font-bold text-blue-300">Contact</h2>
+      <div className="flex justify-between gap-3 w-full py-4">
 
         {contactItems.map((item, index) => (
           <a
@@ -46,6 +47,8 @@ const Contact = () => {
         ))}
 
       </div>
+
+      <GithubGraph />
     </section>
   )
 }
