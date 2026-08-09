@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 
 const Intro = () => {
   return (
-    <section className="relative w-full overflow-hidden px-10 pt-15 pb-4">
+    <section className="relative w-full overflow-hidden px-10 pt-10 pb-4">
 
       <div className="relative h-60 w-full rounded-3xl">
         <Image
