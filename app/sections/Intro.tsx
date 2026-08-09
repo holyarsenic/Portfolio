@@ -45,26 +45,16 @@ const Intro = () => {
           </div>
 
         </div>
-
-          <p className="mt-4 w-full text-lg leading-8 text-gray-300">
-            Hi, I&apos;m <span className="text-white font-semibold">Rohan</span>, a 2nd - year student and
-            passionate Full-Stack Web Developer who enjoys building modern, responsive,
-            and user-focused web applications. I love turning ideas into clean,
-            high-performance solutions while continuously improving my skills as a
-            developer.
-            <br />
-            <br />
-            I primarily work with{" "}
-            <span className="text-blue-300 font-medium">
-              TypeScript, React, Next.js, Node.js, Express, MongoDB, Tailwind CSS
-            </span>
-            . I&apos;m currently deepening my expertise in
-            <span className="text-white font-medium">{" "}Next.js{" "}</span> by building
-            real-world projects, exploring modern web development practices, and learning
-            scalable application architecture. I&apos;m also passionate about open-source
-            contributions, exploring GenAI, and continuously growing as a software
-            engineer.
-          </p>
+        <p className="mt-4 w-full text-lg leading-8 text-gray-300">
+          Hey, I&apos;m <span className="text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
+          <br />
+          <br />
+          I mostly work with{" "}
+          <span className="text-blue-300 font-medium">
+            TypeScript, React, Next.js, Node.js, Express, MongoDB, and Tailwind CSS
+          </span>
+          . Right now, I&apos;m diving deeper into <span className="text-white font-medium">Next.js</span>, playing around with GenAI, and building projects that are fun to work on — because honestly, that&apos;s where most of the learning happens.
+        </p>
       </div>
     </section>
   );
