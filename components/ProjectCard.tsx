@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 
 export interface ProjectCardProps {
+  name: string;
   title: string;
   description: string;
   image: string;
@@ -21,6 +22,7 @@ export interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+  name,
   title,
   description,
   image,
@@ -31,49 +33,51 @@ const ProjectCard = ({
   isBuilding = false,
 }: ProjectCardProps) => {
   return (
-    <Card className="w-full p-4">
-
-      <div className="relative w-full overflow-hidden rounded-xl">
-        <Image
-          src={image}
-          alt={title}
-          width={400}
-          height={100}
-          className="h-100 w-full object-cover"
-        />
-      </div>
-
+    <Card className="w-full p-4 group hover:ring-violet-300/60 transition-all">
       <CardHeader>
         <div className="flex items-center justify-between">
-          <CardTitle className="text-foreground text-base tracking-tight">
-            {title}
-          </CardTitle>
+            <CardTitle className="text-base">
+              {name}
+            </CardTitle>
 
-          {isLive && (
-            <div className="h-full flex items-center justify-center gap-2 font-name">
-              <span className="w-2 h-2 rounded-full bg-blue-300">
-              </span>
-              <span className="text-base text-blue-300">
-                Live
-              </span>
-            </div>
-          )}
+            {isLive && (
+              <div className="h-full flex items-center justify-center gap-2 font-name">
+                <span className="w-2 h-2 rounded-full bg-blue-300">
+                </span>
+                <span className="text-base text-blue-300">
+                  Live
+                </span>
+              </div>
+            )}
 
-          {isBuilding && (
-            <div className="flex items-center justify-center gap-2 font-name">
-              <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse">
-              </span>
-              <span className="text-base text-yellow-500">
-                Building
-              </span>
-            </div>
-          )}
+            {isBuilding && (
+              <div className="flex items-center justify-center gap-2 font-name">
+                <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse">
+                </span>
+                <span className="text-base text-yellow-500">
+                  Building
+                </span>
+              </div>
+            )}
         </div>
-
-        <CardDescription className="text-muted-foreground line-clamp-3 text-xs leading-relaxed">
-          {description}
+        <CardDescription className="text-base font-semibold">
+          {title}
         </CardDescription>
       </CardHeader>
+
+      <div className="h-45 w-full relative overflow-hidden rounded-xl border-4 group-hover:border-violet-300/60 transition-colors bg-[#111]">
+        <Image
+          src={image}
+          alt={name}
+          width={400}
+          height={100}
+          className="object-contain"
+        />
+      </div>  
+
+        <CardDescription className="text-muted-foreground line-clamp-3 text-base leading-relaxed">
+          {description}
+        </CardDescription>
 
       <CardFooter className="flex items-center justify-between gap-1.5 border-none bg-transparent pt-0">
         <div className="flex flex-wrap gap-1.5">
