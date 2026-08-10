@@ -143,7 +143,6 @@ const filters = [
   { label: "Languages", value: "language" },
   { label: "Frontend", value: "frontend" },
   { label: "Backend", value: "backend" },
-  { label: "Design", value: "design" },
   { label: "Tools", value: "tool" },
 ];
 
@@ -153,7 +152,7 @@ const TechStack = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <section className="relative w-full overflow-hidden px-10 py-6">
+    <section className="h-67 relative w-full overflow-hidden px-10 py-6">
       <div className="relative w-full flex justify-between items-center">
         <h2 className="text-3xl font-bold text-blue-300">
           Tech Stack
@@ -195,7 +194,7 @@ const TechStack = () => {
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-3 py-5">
-        {stackItems.map((stack, i) => (
+        {stackItems.filter((stack) => activeFilter === "all" || stack.type === activeFilter).map((stack, i) => (
           <MagneticButton
             key={i}
             variant="outline"
