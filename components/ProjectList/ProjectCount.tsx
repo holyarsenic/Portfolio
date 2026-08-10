@@ -7,7 +7,7 @@ const ProjectCount: ProjectCardProps[] = [
     description:
       "A social platform for image discovery and community engagement, with protected routing, auth context, and push notifications.",
     image: "/Project1.png",
-    tags: ["React", "React Router", "Tailwind CSS", "Node.js", "Express", "MongoDb"],
+    tags: ["Node.js", "React", "React Router", "Tailwind CSS", "Express", "MongoDb"],
     liveLink: "https://shuriken-nine.vercel.app/", 
     gitHubLink: "https://github.com/holyarsenic/Shuriken",
     isLive: true,

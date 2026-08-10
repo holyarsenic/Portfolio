@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from "../ui/card";
 import Link from "next/link";
+import {FaGithub} from "react-icons/fa6";
+import { CiGlobe } from "react-icons/ci";
 
 export interface ProjectCardProps {
   name: string;
@@ -98,13 +100,13 @@ const ProjectCard = ({
         <div className="flex items-center gap-1.5">
           {gitHubLink && (
             <Link href={gitHubLink} target="_blank">
-              <Button>Github</Button>
+              <Button><FaGithub /></Button>
             </Link>
           )}
 
           {liveLink && (
             <Link href={liveLink} target="_blank">
-              <Button>Live</Button>
+              <Button><CiGlobe /></Button>
             </Link>
           )}
         </div>

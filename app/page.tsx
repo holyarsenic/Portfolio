@@ -2,6 +2,7 @@ import Intro from "./sections/Intro";
 import Contact from "./sections/Contact";
 import Container from "@/components/containers"
 import Projects from "./sections/Projects"
+import TechStack from "./sections/TechStack";
 
 export default function Home() {
   return (
@@ -23,6 +24,12 @@ export default function Home() {
 
         <Container>
           <Projects />
+        </Container>
+
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
+
+        <Container>
+          <TechStack />
         </Container>
 
         <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
