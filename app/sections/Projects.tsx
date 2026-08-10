@@ -1,33 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ProjectCard, { ProjectCardProps } from "@/components/ProjectCard";
-
-
-const projectCount: ProjectCardProps[] = [
-  {
-    name: "Shuriken",
-    title: "Full-Stack Social Web App",
-    description:
-      "A fast and minimal developer toolkit built to make everyday workflows a little less painful.",
-    image: "/Project1.png",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    liveLink: "https://shuriken.example",
-    gitHubLink: "https://github.com/holyarsenic/shuriken",
-    isLive: true,
-  },
-  {
-    name: "Road-City",
-    title: "Landing Page",
-    description:
-      "A simple task management app with a clean UI, smooth interactions, and a focus on keeping things distraction-free.",
-    image: "/Project2.png",
-    tags: ["React", "TypeScript", "Supabase"],
-    liveLink: "https://taskflow.example",
-    gitHubLink: "https://github.com/holyarsenic/taskflow",
-    isLive: true,
-  },
-];
-    
+import ProjectCard from "@/components/ProjectList/ProjectCard";
+import ProjectCount from "@/components/ProjectList/ProjectCount"
 
 
 const Projects = () => {
@@ -55,11 +30,24 @@ const Projects = () => {
       <h2 className="w-full text-3xl font-bold text-blue-300 mb-6">Projects</h2>
 
       <div className="columns-1 sm:columns-2 gap-4">
-        {projectCount.map((project, i) => (
+        {ProjectCount.slice(0, 2).map((project, i) => (
           <div key={i} className="mb-4 break-inside-avoid">
             <ProjectCard {...project} />
           </div>
         ))}
+      </div>
+
+      <div className="mt-2 w-full flex items-center justify-center">
+        <Link
+        href="/Project"
+        >
+          <Button className="bg-transparent hover:bg-transparent text-lg text-blue-300 font-name">
+            View all Project
+            <ArrowUpRight
+              size={12}
+            />
+          </Button>
+        </Link>
       </div>
     </div>
   );
