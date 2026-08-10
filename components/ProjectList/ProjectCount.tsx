@@ -41,7 +41,7 @@ const ProjectCount: ProjectCardProps[] = [
       "A fully responsive pizza shop site with GSAP animations, a custom cursor effect, responsive navigation, and a login popup.",
     image: "/Project5.png",
     tags: ["HTML", "CSS", "JavaScript", "GSAP"],
-    liveLink: "holyarsenic.github.io/Pizza-Shop/", 
+    liveLink: "https://holyarsenic.github.io/Pizza-Shop/", 
     gitHubLink: "https://github.com/holyarsenic/Pizza-Shop",
     isLive: true,
   },
