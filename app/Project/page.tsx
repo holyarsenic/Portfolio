@@ -1,21 +1,23 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Container from "@/components/containers";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectList/ProjectCard";
-import ProjectCount from "@/components/ProjectList/ProjectCount"
-
+import ProjectCount from "@/components/ProjectList/ProjectCount";
 
 const Projects = () => {
   return (
     <Container>
       <div className="min-h-screen relative w-full overflow-hidden px-10 py-4">
-        <div className="w-full flex justify-between">
-          <Button variant={"link"} className="flex gap-2">
-            <FaArrowLeftLong className="text-lg"/>
-            <span className="text-lg">Home</span>
-          </Button>
+        <div className="w-full flex items-center justify-between mb-8">
+          
+          <Link
+            href="/#home"
+            className="flex items-center gap-2 group text-sm font-semibold text-gray-400 transition-all hover:bg-blue-400/10 hover:text-blue-300"
+          >
+            <FaArrowLeftLong className="text-sm transition-transform duration-300 group-hover:-translate-x-1" />
+            <span>Home</span>
+          </Link>
 
           <Link
             href="https://github.com/holyarsenic"
@@ -31,7 +33,7 @@ const Projects = () => {
           </Link>
         </div>
 
-        <h2 className="w-full text-3xl font-bold text-blue-300 mb-6">Projects</h2>
+       <h2 className="w-full text-3xl font-bold text-blue-300 mb-6">Projects</h2>
 
         <div className="columns-1 sm:columns-2 gap-4">
           {ProjectCount.map((project, i) => (
@@ -40,6 +42,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
       </div>
     </Container>
   );
