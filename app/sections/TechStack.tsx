@@ -198,15 +198,7 @@ const TechStack = () => {
           <MagneticButton
             key={i}
             variant="outline"
-            className="
-              h-10
-              px-4
-              text-white/50
-              transition-all
-              hover:text-blue-300
-              hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]
-            "
-          >
+            className="h-10 px-4 text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
             <div className="flex items-center gap-2">
               <span className="text-lg">
                 {stack.icon}
