@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import Container from "@/components/containers";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -11,8 +12,9 @@ const Projects = () => {
     <Container>
       <div className="min-h-screen relative w-full overflow-hidden px-10 py-4">
         <div className="w-full flex justify-between">
-          <Button variant={"link"}>
-            Home
+          <Button variant={"link"} className="flex gap-2">
+            <FaArrowLeftLong className="text-lg"/>
+            <span className="text-lg">Home</span>
           </Button>
 
           <Link
