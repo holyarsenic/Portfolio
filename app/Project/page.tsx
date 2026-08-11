@@ -13,7 +13,7 @@ const Projects = () => {
           
           <Link
             href="/#home"
-            className="flex items-center gap-2 group text-sm font-semibold text-gray-400 transition-all hover:bg-blue-400/10 hover:text-blue-300"
+            className="flex items-center gap-1 group text-sm font-semibold text-gray-400 transition-all hover:bg-blue-400/10 hover:text-blue-300"
           >
             <FaArrowLeftLong className="text-sm transition-transform duration-300 group-hover:-translate-x-1" />
             <span>Home</span>
