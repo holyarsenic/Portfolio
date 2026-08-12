@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
+import { useTheme } from "next-themes";
 const GitHubCalendar = dynamic(
   () =>
     import("react-github-calendar").then(
@@ -18,6 +18,8 @@ const GitHubCalendar = dynamic(
 );
 
 const GithubGraph = () => {
+
+  const { resolvedTheme } = useTheme()
   return (
     <div className="relative flex flex-col w-full justify-center items-center gap-4 border rounded-2xl p-5 overflow-x-auto mt-4">
 
@@ -26,27 +28,27 @@ const GithubGraph = () => {
       </div>
       <GitHubCalendar
         username="holyarsenic"
-        colorScheme="dark"
+        colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
         blockSize={10}
         blockMargin={4}
         fontSize={17}
         className="text-xl"
-       theme={{
-          dark: [
-            "#1c2f44",
-            "#214b73",
-            "#2d63aa",
-            "#317ad8",
-            "#3c97ff",
-          ],
+        theme={{
+            dark: [
+              "#1c2f44",
+              "#214b73",
+              "#2d63aa",
+              "#317ad8",
+              "#3c97ff",
+            ],
           light: [
-            "#1c2f44",
-            "#214b73",
-            "#2d63aa",
-            "#317ad8",
-            "#3c97ff",
-          ],
-        }}
+              "#dbeafe",
+              "#93c5fd", 
+              "#60a5fa", 
+              "#3b82f6", 
+              "#2563eb",
+            ]
+          }}
       />
     </div>
   );

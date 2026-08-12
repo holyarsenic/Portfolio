@@ -1,7 +1,11 @@
 "use client";
-
-import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { useTheme } from "next-themes";
+import dynamic from "next/dynamic"
+
+const AnimatedThemeToggler = dynamic(
+  () => import("@/components/ui/animated-theme-toggler").then((mod) => mod.AnimatedThemeToggler),
+  { ssr: false }
+)
 
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();

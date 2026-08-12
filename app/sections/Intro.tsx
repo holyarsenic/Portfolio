@@ -2,25 +2,22 @@
 
 import Image from "next/image";
 import Profile from "@/public/profile.jpg";
-import Banner from "@/public/banner.jpg"
-import DarkBanner from "@/public/dark-banner.jpeg";
+import Banner from "@/public/banner.png"
 import { FlipWords } from "@/components/ui/flip-words";
-import { useTheme } from "next-themes";
 
 const Intro = () => {
-
-  const { resolvedTheme } = useTheme();
 
   return (
     <section className="relative w-full overflow-hidden px-10 pt-10 pb-4">
 
       <div className="relative h-60 w-full rounded-3xl">
         <Image
-          src={resolvedTheme === "dark" ? DarkBanner : Banner}
+          src={Banner}
           alt="Banner"
           loading="eager"
           className="w-full h-full object-cover"
         />
+
         <div className="absolute inset-0 bg-linear-to-t from-white via-white/10 dark:from-black dark:via-black/10 to-transparent" />
       </div>
 
