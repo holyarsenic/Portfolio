@@ -4,6 +4,8 @@ import Container from "@/components/containers"
 import Projects from "./sections/Projects"
 import TechStack from "./sections/TechStack";
 import FooterContactSection from "./sections/FooterContactSection";
+import Quote from "./sections/Quote";
+import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
@@ -37,6 +39,18 @@ export default function Home() {
 
         <Container>
           <FooterContactSection />
+        </Container>
+
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
+
+        <Container>
+          <Quote />
+        </Container>
+
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
+
+        <Container>
+          <Footer />
         </Container>
 
         <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
