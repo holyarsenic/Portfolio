@@ -53,7 +53,7 @@ export default function Home() {
           <Footer />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
+        <div className=" w-full h-20 bg-gray-700/10 border-y border-white border-dashed opacity-80 dark:opacity-12" />
     </div>
   );
 }
