@@ -11,10 +11,10 @@ const Container = ({children, classname}:
             absolute right-0 top-0
             h-full w-6
             border-l
-            border-white
+            border-black
+            dark:border-white
             border-dashed
-            opacity-80
-            dark:opacity-12
+            opacity-12
           "
         />
 
@@ -23,10 +23,10 @@ const Container = ({children, classname}:
             absolute left-0 top-0
             h-full w-6
             border-r
-            border-white
+            border-black
+            dark:border-white
             border-dashed 
-            opacity-80
-            dark:opacity-12
+            opacity-12
           "
         />
 

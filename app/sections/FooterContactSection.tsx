@@ -33,12 +33,12 @@ export default function Connect() {
         <div className="w-full pt-4 px-4">
           <h2 className=" text-2xl font-bold tracking-tight">
             Have a project{' '}
-            <span className="text-gray-500">in mind?</span>
+            <span className="text-gray-400 dark:text-gray-500">in mind?</span>
           </h2>
 
         <div className="w-full">
           <div>
-            <p className=" text-sm text-gray-400 md:text-base">
+            <p className=" text-sm text-gray-500 dark:text-gray-400 md:text-base">
               Feel free to reach out through any of these platforms. Whether
               you have an idea, a project, or just want to connect, I&apos;d love
               to hear from you.

@@ -39,7 +39,7 @@ const Contact = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 text-gray-500 hover:text-blue-300 border border-gray-500 hover:border-blue-300 p-2 w-full justify-center transition-colors duration-300"
+            className="flex items-center gap-3 text-gray-500 hover:text-blue-400 dark:hover:text-blue-300 border border-gray-500 hover:border-blue-300 p-2 w-full justify-center transition-colors duration-300"
           >
             {item.icon}
             <span>{item.text}</span>

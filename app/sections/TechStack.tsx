@@ -172,7 +172,7 @@ const TechStack = () => {
         </Button>
 
         {dropdownOpen && (
-          <div className="absolute right-0 top-11 z-50 w-40 h-47 overflow-hidden rounded-xl border border-white/10 bg-[#111] p-1.5 shadow-xl">
+          <div className="absolute right-0 top-11 z-50 w-40 h-47 overflow-hidden rounded-xl border border-white/10 bg-gray-50 dark:bg-[#111] p-1.5 shadow-xl">
             {filters.map((filter, i) => (
               <button
                 key={i}
@@ -183,7 +183,7 @@ const TechStack = () => {
                 className={`w-full px-3 py-2 text-left text-sm transition-colors ${
                   activeFilter === filter.value
                     ? "bg-blue-300/10 text-blue-300"
-                    : "text-white/60 hover:bg-white/5 hover:text-white"
+                    : "text-black/60 dark:text-white/60 dark:hover:bg-white/5 hover:bg-black/5 dark:hover:text-white hover:text-black/60"
                 }`}
               >
                 {filter.label}
@@ -198,7 +198,7 @@ const TechStack = () => {
           <MagneticButton
             key={i}
             variant="outline"
-            className="h-10 px-4 text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
+            className="h-10 px-4 text-black/50 dark:text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
             <div className="flex items-center gap-2">
               <span className="text-lg">
                 {stack.icon}

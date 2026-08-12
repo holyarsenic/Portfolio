@@ -31,8 +31,15 @@ const GithubGraph = () => {
         blockMargin={4}
         fontSize={17}
         className="text-xl"
-        theme={{
+       theme={{
           dark: [
+            "#1c2f44",
+            "#214b73",
+            "#2d63aa",
+            "#317ad8",
+            "#3c97ff",
+          ],
+          light: [
             "#1c2f44",
             "#214b73",
             "#2d63aa",

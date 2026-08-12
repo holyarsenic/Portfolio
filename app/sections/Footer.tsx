@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="mb-20">
         <p className="mb-2">
           Designed & Developed by{" "}
-          <span className=" font-medium text-blue-300">Rohan</span>
+          <span className=" font-medium text-blue-400 dark:text-blue-300">Rohan</span>
         </p>
         <p>&copy; 2026 All rights reserved.</p>
         

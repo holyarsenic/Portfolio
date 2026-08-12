@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from 'react';
 import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const archivoBlack = Archivo_Black({
   weight: "400",
@@ -36,7 +37,13 @@ export default function RootLayout({
       className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased dark`}
     >
       <body className={`${adventPro.variable} min-h-screen`}>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
+          {children}
+        </ThemeProvider>    
       </body>
     </html>
   );
