@@ -154,7 +154,7 @@ export const AnimatedThemeToggler = ({
   className,
   duration = 400,
   variant,
-  fromCenter = false,
+  fromCenter = true,
   theme,
   onThemeChange,
   ...props
