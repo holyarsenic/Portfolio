@@ -34,13 +34,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased dark`}
+      suppressHydrationWarning
+      className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased`}
     >
       <body className={`${adventPro.variable} min-h-screen`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
+          enableColorScheme={false}
         >
           {children}
         </ThemeProvider>    
