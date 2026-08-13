@@ -41,7 +41,7 @@ const Projects = () => {
         <Link
         href="/Project"
         >
-          <Button className="bg-transparent hover:bg-transparent text-lg text-blue-300 font-name">
+          <Button className="bg-transparent hover:bg-transparent text-lg text-blue-400 dark:text-blue-300 font-name">
             View all Project
             <ArrowUpRight
               size={12}
