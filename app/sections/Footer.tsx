@@ -1,5 +1,3 @@
-
-
 const Footer = () => {
   return (
     <footer className="text-muted-foreground relative flex w-full flex-col items-center justify-center pt-20 pb-0 text-center text-base font-name">

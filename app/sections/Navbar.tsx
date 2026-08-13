@@ -15,7 +15,6 @@ const Navbar = () => {
       <AnimatedThemeToggler
         theme={resolvedTheme === "dark" ? "dark" : "light"}
         onThemeChange={(newTheme) => setTheme(newTheme)}
-        variant="star"
         className="bg-card hover:bg-background flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border transition-colors [&>svg]:h-4 [&>svg]:w-4"
       />
     </div>
