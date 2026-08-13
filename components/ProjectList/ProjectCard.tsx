@@ -47,7 +47,7 @@ const ProjectCard = ({
               <div className="h-full flex items-center justify-center gap-2 font-name">
                 <span className="w-2 h-2 rounded-full bg-blue-300">
                 </span>
-                <span className="text-base text-blue-300">
+                <span className="text-base text-blue-400 dark:text-blue-300">
                   Live
                 </span>
               </div>

@@ -18,7 +18,7 @@ const Intro = () => {
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-linear-to-t from-white via-white/10 dark:from-black dark:via-black/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-blue-50 via-blue-50/10 dark:from-black dark:via-black/10 to-transparent" />
       </div>
 
       <div className="relative -mt-22">
@@ -50,7 +50,7 @@ const Intro = () => {
           </div>
 
         </div>
-        <p className="mt-4 w-full text-lg leading-8 text-gray-500 dark:text-gray-300">
+        <p className="mt-4 w-full text-lg leading-8 text-gray-700 dark:text-gray-300">
           Hey, I&apos;m <span className="text-black dark:text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
           <br />
           <br />

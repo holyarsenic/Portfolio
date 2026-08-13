@@ -5,7 +5,7 @@ const Container = ({children, classname}:
   {children: React.ReactNode; 
     classname?: string }) => {
   return (
-    <div className={cn("relative max-w-4xl mx-auto w-full h-full bg-white dark:bg-neutral-950", classname)}>
+    <div className={cn("relative max-w-4xl mx-auto w-full h-full bg-blue-50 dark:bg-neutral-950", classname)}>
         <div
           className="
             absolute right-0 top-0
