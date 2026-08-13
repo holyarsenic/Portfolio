@@ -14,7 +14,7 @@ const Container = ({children, classname}:
             border-black
             dark:border-white
             border-dashed
-            opacity-12
+            opacity-20
           "
         />
 
@@ -26,7 +26,7 @@ const Container = ({children, classname}:
             border-black
             dark:border-white
             border-dashed 
-            opacity-12
+            opacity-20
           "
         />
 

@@ -16,49 +16,49 @@ export default function Home() {
           <Navbar />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <Intro />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <Contact />
         </Container>
 
-       <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+       <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <Projects />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <TechStack />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <FooterContactSection />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <Quote />
         </Container>
 
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
 
         <Container>
           <Footer />
         </Container>
 
-        <div className=" w-full h-20 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-12" />
+        <div className=" w-full h-20 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
     </div>
   );
 }
