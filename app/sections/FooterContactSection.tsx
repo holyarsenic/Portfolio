@@ -27,7 +27,7 @@ const connectHandle = [
 
 export default function Connect() {
   return (
-    <section className="relative w-full overflow-hidden px-10 py-4">
+    <section className="relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-4">
       <h2 className="w-full text-3xl font-bold text-blue-300">Work with me</h2>  
         
         <div className="w-full pt-4 px-4">

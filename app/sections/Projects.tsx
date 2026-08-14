@@ -7,9 +7,9 @@ import ProjectCount from "@/components/ProjectList/ProjectCount"
 
 const Projects = () => {
   return (
-    <div className="relative w-full overflow-hidden px-10 py-4">
+    <div className="relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-4">
       <div className="w-full flex justify-between">
-        <p className="text-lg font-bold text-gray-500 font-bitcount">
+        <p className="text-base md:text-lg font-bold text-gray-500 font-bitcount">
           Featured
         </p>
 
@@ -17,7 +17,7 @@ const Projects = () => {
           href="https://github.com/holyarsenic"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 group text-base font-bold text-gray-500 cursor-pointer"
+          className="flex items-center gap-1 group text-sm md:text-base font-bold text-gray-500 cursor-pointer"
         >
           View all on Github
           <ArrowUpRight
@@ -27,9 +27,9 @@ const Projects = () => {
         </Link>
       </div>
 
-      <h2 className="w-full text-3xl font-bold text-blue-300 mb-6">Projects</h2>
+      <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-3 md:mb-6">Projects</h2>
 
-      <div className="columns-1 sm:columns-2 gap-4">
+      <div className="columns-1 sm:columns-2 gap-4 px-2 md:px-0">
         {ProjectCount.slice(0, 2).map((project, i) => (
           <div key={i} className="mb-4 break-inside-avoid">
             <ProjectCard {...project} />
@@ -41,7 +41,7 @@ const Projects = () => {
         <Link
         href="/Project"
         >
-          <Button className="bg-transparent hover:bg-transparent text-lg text-blue-400 dark:text-blue-300 font-name">
+          <Button className="bg-transparent hover:bg-transparent text-base md:text-lg text-blue-400 dark:text-blue-300 font-name">
             View all Project
             <ArrowUpRight
               size={12}

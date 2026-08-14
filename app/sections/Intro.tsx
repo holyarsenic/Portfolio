@@ -8,9 +8,9 @@ import { FlipWords } from "@/components/ui/flip-words";
 const Intro = () => {
 
   return (
-    <section className="relative w-full overflow-hidden px-10 pt-10 pb-4">
+    <section className="relative w-full overflow-hidden px-4 md:px-8 lg:px-10 pt-10 pb-4">
 
-      <div className="relative h-60 w-full rounded-3xl">
+      <div className="relative h-full md:h-60 w-full rounded-3xl">
         <Image
           src={Banner}
           alt="Banner"
@@ -30,17 +30,17 @@ const Intro = () => {
               src={Profile}
               alt="Profile"
               sizes="100vw"
-              className="h-30 w-30 rounded-full object-cover"
+              className="h-25 w-25 md:h-30 md:w-30 rounded-full object-cover"
             />
           </div>
 
           <div className="flex flex-col items-center md:items-start">
-            <h1 className="text-5xl font-name text-black dark:text-white">
+            <h1 className="text-3xl md:text-5xl font-name text-black dark:text-white">
               Rohan Kamat
             </h1>
 
             <FlipWords
-              className=" text-2xl text-blue-400 dark:text-blue-300"
+              className="text-xl md:text-2xl text-blue-400 dark:text-blue-300"
               words={[
                 "Full-Stack Web Developer",
                 "Backend Developer",
@@ -50,7 +50,7 @@ const Intro = () => {
           </div>
 
         </div>
-        <p className="mt-4 w-full text-lg leading-8 text-gray-700 dark:text-gray-300">
+        <p className="mt-4 w-full text-sm md:text-lg leading-8 text-gray-700 dark:text-gray-300">
           Hey, I&apos;m <span className="text-black dark:text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
           <br />
           <br />
