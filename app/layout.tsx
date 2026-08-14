@@ -22,8 +22,35 @@ const adventPro = Advent_Pro({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
   title: "Rohan | Fullstack developer",
+  openGraph: {
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Open Graph Image",
+      },
+    ],
+  },
   description: "Nope",
+  applicationName: "holyarsenic",
+  keywords: [
+    "Rohan Kamat",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Next.js Developer",
+    "React Developer",
+    "TypeScript",
+    "Node.js",
+    "Portfolio",
+    "Projects",
+    "Web Developer",
+  ],
+  
 };
 
 export default function RootLayout({
