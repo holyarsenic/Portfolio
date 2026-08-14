@@ -11,12 +11,8 @@ import Navbar from "./sections/Navbar";
 export default function Home() {
   return (
     <div className="relative flex min-h-screen justify-center overflow-hidden flex-col">
-
-        <Container>
-          <Navbar />
-        </Container>
-
-        <div className=" w-full h-6 bg-gray-700/10 border-y border-black dark:border-white border-dashed opacity-20" />
+        
+        <Navbar />
 
         <Container>
           <Intro />
