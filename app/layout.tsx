@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import React from 'react';
+import React from "react";
 import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -22,35 +22,83 @@ const adventPro = Advent_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-  ),
-  title: "Rohan | Fullstack developer",
-  openGraph: {
-    images: [
-      {
-        url: "/profile.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Open Graph Image",
-      },
-    ],
+  metadataBase: new URL("https://holyarsenic.vercel.app"),
+
+  title: {
+    default: "Rohan Kamat | Full Stack Developer",
+    template: "%s | Rohan Kamat",
   },
-  description: "Nope",
+
+  description:
+    "Rohan Kamat is a full stack developer specializing in Next.js, React, TypeScript, Node.js, and modern web development.",
+
   applicationName: "holyarsenic",
+
   keywords: [
     "Rohan Kamat",
     "Full Stack Developer",
     "Software Engineer",
     "Next.js Developer",
     "React Developer",
-    "TypeScript",
-    "Node.js",
-    "Portfolio",
-    "Projects",
+    "TypeScript Developer",
+    "Node.js Developer",
     "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Portfolio",
+    "Web Development",
   ],
-  
+
+  authors: [
+    {
+      name: "Rohan Kamat",
+    },
+  ],
+
+  creator: "Rohan Kamat",
+  publisher: "Rohan Kamat",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "Rohan Kamat",
+    title: "Rohan Kamat | Full Stack Developer",
+    description:
+      "Full stack developer building modern web applications with Next.js, React, TypeScript, and Node.js.",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rohan Kamat - Full Stack Developer",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Rohan Kamat | Full Stack Developer",
+    description:
+      "Full stack developer building modern web applications with Next.js, React, TypeScript, and Node.js.",
+    images: ["/profile.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -64,7 +112,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased`}
     >
-      <body className={`${adventPro.variable} min-h-screen`}>
+      <body className="min-h-screen">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -72,7 +120,7 @@ export default function RootLayout({
           enableColorScheme={false}
         >
           {children}
-        </ThemeProvider>    
+        </ThemeProvider>
       </body>
     </html>
   );
