@@ -152,9 +152,9 @@ const TechStack = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <section className="h-67 relative w-full overflow-hidden px-10 py-6">
+    <section className="h-110 md:h-67 relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-6">
       <div className="relative w-full flex justify-between items-center">
-        <h2 className="text-3xl font-bold text-blue-300">
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
           Tech Stack
         </h2>
 
@@ -162,10 +162,10 @@ const TechStack = () => {
           variant="outline"
           size="sm"
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="flex items-center gap-2 px-4 py-4 text-sm font-semibold">
+          className="flex items-center gap-2 px-2 py-2 md:px-4 md:py-4 text-xs md:text-sm font-semibold">
               
           <span>{filters.find((f) => f.value === activeFilter)?.label}</span>
-          <span className="text-lg">
+          <span className="text-sm md:text-lg">
             <IoIosArrowDown />
           </span>
 
@@ -198,13 +198,13 @@ const TechStack = () => {
           <MagneticButton
             key={i}
             variant="outline"
-            className="h-10 px-4 bg-blue-100 text-black/50 dark:text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
+            className="h-8 md:h-10 px-4 bg-blue-100 text-black/50 dark:text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
             <div className="flex items-center gap-2">
-              <span className="text-lg">
+              <span className="text-sm md:text-lg">
                 {stack.icon}
               </span>
 
-              <span className="text-sm font-medium whitespace-nowrap">
+              <span className="text-xs md:text-sm font-medium whitespace-nowrap">
                 {stack.title}
               </span>
             </div>

@@ -3,7 +3,7 @@ import Contact from "./sections/Contact";
 import Container from "@/components/containers"
 import Projects from "./sections/Projects"
 import TechStack from "./sections/TechStack";
-import FooterContactSection from "./sections/FooterContactSection";
+import FooterContactSection from "./sections/Connect";
 import Quote from "./sections/Quote";
 import Footer from "./sections/Footer";
 import Navbar from "./sections/Navbar";

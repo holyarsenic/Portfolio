@@ -25,27 +25,27 @@ const connectHandle = [
   },
 ];
 
-export default function Connect() {
+const connect = () => {
   return (
     <section className="relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-4">
-      <h2 className="w-full text-3xl font-bold text-blue-300">Work with me</h2>  
+      <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300">Work with me</h2>  
         
         <div className="w-full pt-4 px-4">
-          <h2 className=" text-2xl font-bold tracking-tight">
+          <h2 className="text-xl md:text-2xl font-bold tracking-tight">
             Have a project{' '}
-            <span className="text-gray-400 dark:text-gray-500">in mind?</span>
+            <span className="text-xl md:text-2xl text-gray-400 dark:text-gray-500">in mind?</span>
           </h2>
 
         <div className="w-full">
           <div>
-            <p className=" text-sm text-gray-500 dark:text-gray-400 md:text-base">
+            <p className="text-sm text-gray-500 dark:text-gray-400 md:text-base">
               Feel free to reach out through any of these platforms. Whether
               you have an idea, a project, or just want to connect, I&apos;d love
               to hear from you.
             </p>
           </div>
 
-          <div className="flex w-full justify-center py-2">
+          <div className="flex w-full justify-center py-2 px-10 md:px-0">
             {connectHandle.map((item) => (
               <a
                 key={item.title}
@@ -58,7 +58,7 @@ export default function Connect() {
                   icon={item.icon}
                   accentColor="#93C5FD"
                 >
-                  <span>{item.title}</span>
+                  <span className="hidden md:block">{item.title}</span>
                 </CornerButton>
               </a>
             ))}
@@ -69,3 +69,5 @@ export default function Connect() {
     </section>
   );
 }
+
+export default connect;
