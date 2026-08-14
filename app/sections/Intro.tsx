@@ -50,7 +50,7 @@ const Intro = () => {
           </div>
 
         </div>
-        <p className="mt-4 w-full text-sm md:text-lg leading-8 text-gray-700 dark:text-gray-300">
+        <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:sleading-8 text-gray-700 dark:text-gray-300 text-justify">
           Hey, I&apos;m <span className="text-black dark:text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
           <br />
           <br />

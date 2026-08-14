@@ -62,7 +62,7 @@ export function CornerButton({
         .corner-btn-wrapper {
           --dot-size: 6px;
           --line-weight: 1px;
-          --padding: 0.9rem 1.1rem;
+          --padding: clamp(0.35rem, 2vw, 0.9rem) clamp(0.4rem, 3vw, 1.1rem);
           --speed: 0.35s;
           --dot-color: #666;
           --line-color: #999;

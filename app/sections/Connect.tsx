@@ -38,7 +38,7 @@ const connect = () => {
 
         <div className="w-full">
           <div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 md:text-base">
+            <p className="text-base text-gray-500 dark:text-gray-400 md:text-base">
               Feel free to reach out through any of these platforms. Whether
               you have an idea, a project, or just want to connect, I&apos;d love
               to hear from you.
