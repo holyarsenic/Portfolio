@@ -30,9 +30,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Rohan Kamat is a full stack developer specializing in Next.js, React, TypeScript, Node.js, and modern web development.",
-
-  applicationName: "holyarsenic",
+    " Next.js, React, TypeScript, Node.js, and modern web development.",
 
   keywords: [
     "Rohan Kamat",
@@ -63,13 +61,6 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "/",
-    siteName: "Rohan Kamat",
-    title: "Rohan Kamat | Full Stack Developer",
-    description:
-      "Full stack developer building modern web applications with Next.js, React, TypeScript, and Node.js.",
     images: [
       {
         url: "/profile.jpg",
@@ -83,8 +74,6 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rohan Kamat | Full Stack Developer",
-    description:
-      "Full stack developer building modern web applications with Next.js, React, TypeScript, and Node.js.",
     images: ["/profile.jpg"],
   },
 
