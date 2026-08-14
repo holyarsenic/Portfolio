@@ -152,7 +152,7 @@ const TechStack = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <section className="h-110 md:h-67 relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-6">
+    <section className="h-110 md:h-67 relative w-full overflow-hidden px-4 md:px-10 py-6">
       <div className="relative w-full flex justify-between items-center">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
           Tech Stack

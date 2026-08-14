@@ -8,7 +8,7 @@ import ProjectCount from "@/components/ProjectList/ProjectCount";
 const Projects = () => {
   return (
     <Container>
-      <div className="min-h-screen relative w-full overflow-hidden px-10 py-4">
+      <div className="min-h-screen relative w-full overflow-hidden px-4 md:px-10 py-4">
         <div className="w-full flex items-center justify-between mb-8">
           
           <Link
@@ -23,7 +23,7 @@ const Projects = () => {
             href="https://github.com/holyarsenic"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 group text-base font-bold text-gray-500 cursor-pointer"
+            className="flex items-center gap-1 group text-sm md:text-base font-bold text-gray-500 cursor-pointer"
           >
             View all on Github
             <ArrowUpRight
@@ -33,9 +33,9 @@ const Projects = () => {
           </Link>
         </div>
 
-       <h2 className="w-full text-3xl font-bold text-blue-300 mb-6">Projects</h2>
+       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-6">Projects</h2>
 
-        <div className="columns-1 sm:columns-2 gap-4">
+        <div className="columns-1 sm:columns-1 md:columns-1 lg:columns-2 gap-4">
           {ProjectCount.map((project, i) => (
             <div key={i} className="mb-4 break-inside-avoid">
               <ProjectCard {...project} />

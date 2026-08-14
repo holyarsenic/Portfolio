@@ -7,7 +7,7 @@ const quote = {
 
 const Quote = () => {
   return (
-    <section className="flex h-60 md:h-67 w-full items-center justify-center px-4 md:px-15 lg:px-20">
+    <section className="flex h-60 md:h-67 w-full items-center justify-center px-4 md:px-20">
       <div className="relative z-10 w-full text-center py-7">
         <FaQuoteLeft className="absolute top-0 mx-auto mb-10 text-9xl text-black/10 dark:text-white/10 -z-10" />
 

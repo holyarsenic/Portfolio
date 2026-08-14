@@ -7,7 +7,7 @@ import ProjectCount from "@/components/ProjectList/ProjectCount"
 
 const Projects = () => {
   return (
-    <div className="relative w-full overflow-hidden px-4 md:px-8 lg:px-10 py-4">
+    <div className="relative w-full overflow-hidden px-4 md:px-10 py-4">
       <div className="w-full flex justify-between">
         <p className="text-base md:text-lg font-bold text-gray-500 font-bitcount">
           Featured
@@ -29,7 +29,7 @@ const Projects = () => {
 
       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-3 md:mb-6">Projects</h2>
 
-      <div className="columns-1 sm:columns-2 gap-4 px-2 md:px-0">
+      <div className="columns-1 sm:columns-1 md:columns-1 lg:columns-2 gap-4 px-2 md:px-0">
         {ProjectCount.slice(0, 2).map((project, i) => (
           <div key={i} className="mb-4 break-inside-avoid">
             <ProjectCard {...project} />

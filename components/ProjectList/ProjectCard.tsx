@@ -68,15 +68,16 @@ const ProjectCard = ({
         </CardDescription>
       </CardHeader>
 
-      <div className="h-45 w-full relative overflow-hidden rounded-xl border-4 group-hover:-translate-y-2 group-hover:border-blue-300/80 transition-transform cursor-pointer bg-[#111]">
+      <div
+        className="relative w-full h-52 sm:h-60 md:h-64 lg:h-72 overflow-hidden rounded-xl border-4 bg-[#111] transition-transform group-hover:-translate-y-2 group-hover:border-blue-300/80 cursor-pointer">
         <Image
           src={image}
           alt={name}
-          width={400}
-          height={45}
-          className="object-contain"
+          fill
+          sizes="100vw"
+          className="object-cover"
         />
-      </div>  
+      </div>
 
         <CardDescription className="h-20 text-muted-foreground line-clamp-3 text-base leading-relaxed">
           {description}
