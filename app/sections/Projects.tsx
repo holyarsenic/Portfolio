@@ -7,7 +7,7 @@ import ProjectCount from "@/components/ProjectList/ProjectCount"
 
 const Projects = () => {
   return (
-    <div className="relative w-full overflow-hidden px-4 md:px-10 py-4">
+    <div className="relative w-full overflow-hidden px-6 md:px-10 py-10 ">
       <div className="w-full flex justify-between">
         <p className="text-base md:text-lg font-bold text-gray-500 font-bitcount">
           Featured
@@ -27,7 +27,7 @@ const Projects = () => {
         </Link>
       </div>
 
-      <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-3 md:mb-6">Projects</h2>
+      <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-10">Projects</h2>
 
       <div className="columns-1 sm:columns-1 md:columns-1 lg:columns-2 gap-4 px-2 md:px-0">
         {ProjectCount.slice(0, 2).map((project, i) => (
@@ -37,7 +37,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="mt-2 w-full flex items-center justify-center">
+      <div className="mt-5 w-full flex items-center justify-center">
         <Link
         href="/Project"
         >
