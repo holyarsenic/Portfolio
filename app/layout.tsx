@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const archivoBlack = Archivo_Black({
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    " Next.js, React, TypeScript, Node.js, and modern web development.",
+    "Next.js, React, TypeScript, Node.js, and modern web development.",
 
   keywords: [
     "Rohan Kamat",
@@ -53,8 +54,8 @@ export const metadata: Metadata = {
     },
   ],
 
-  creator: "Rohan Kamat",
-  publisher: "Rohan Kamat",
+  creator: "holyarsenic",
+  publisher: "holyarsenic",
 
   alternates: {
     canonical: "/",
@@ -110,6 +111,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
