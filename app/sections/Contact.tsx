@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <section className="relative w-full overflow-hidden px-6 md:px-10 pt-4 pb-10" id="contact">
       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300">Contact</h2>
-      <div className="flex justify-between gap-3 w-full py-4 px-2 md:px-0">
+      <div className="flex justify-between gap-3 w-full pt-4 pb-8 px-2 md:px-0">
 
         {contactItems.map((item, index) => (
           <a
