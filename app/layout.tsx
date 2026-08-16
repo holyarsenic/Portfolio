@@ -3,6 +3,7 @@ import React from "react";
 import { Archivo_Black, Bitcount_Prop_Single, Advent_Pro } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import SmoothScroll from "@/components/SmoothScroll";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const archivoBlack = Archivo_Black({
@@ -109,6 +110,7 @@ export default function RootLayout({
           enableSystem={false}
           enableColorScheme={false}
         >
+        <SmoothScroll />
           {children}
         </ThemeProvider>
         <Analytics />
