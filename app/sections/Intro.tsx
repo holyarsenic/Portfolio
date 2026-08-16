@@ -65,15 +65,23 @@ const Intro = () => {
           </div>
 
         </div>
-        <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:sleading-8 text-gray-800 dark:text-gray-300 text-justify">
-          Hey, I&apos;m <span className="text-black dark:text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
-          <br />
-          <br />
-          I mostly work with{" "}
+        <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:leading-8 text-gray-800 dark:text-gray-300 text-justify">
+          I&apos;m Rohan, a 2nd-year student and Full-Stack Developer who enjoys
+          building things from scratch and seeing an idea slowly turn into something
+          real. I work across the stack, from{" "}
           <span className="text-blue-400 dark:text-blue-300 font-medium">
-            TypeScript, React, Next.js, Node.js, Express, MongoDB, and Tailwind CSS
-          </span>
-          . Right now, I&apos;m diving deeper into <span className="text-black dark:text-white font-medium">Next.js</span>, playing around with GenAI, and building projects that are fun to work on — because honestly, that&apos;s where most of the learning happens.
+            React and Next.js
+          </span>{" "}
+          on the frontend to{" "}
+          <span className="text-blue-400 dark:text-blue-300 font-medium">
+            Node.js, Express, and MongoDB
+          </span>{" "}
+          on the backend.
+          <br />
+          <br />
+          Most of my time goes into experimenting, building projects, and learning
+          along the way. I like keeping things simple, trying new ideas, and turning
+          random thoughts into something that actually works.
         </p>
       </div>
     </section>
