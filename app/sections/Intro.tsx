@@ -31,7 +31,7 @@ const Intro = () => {
         />
 
       
-        <div className="absolute inset-0 z-20 bg-linear-to-t from-blue-50 via-blue-50/10 dark:from-black dark:via-black/10 to-transparent" />
+        <div className="absolute inset-0 z-20 bg-linear-to-t from-blue-50 via-blue-50/10 dark:from-black/95 dark:via-black/10 to-transparent" />
       </div>
 
       <div className="relative -mt-22 z-30">
