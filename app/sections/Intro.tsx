@@ -73,7 +73,7 @@ const Intro = () => {
 
         </div>
         <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:leading-8 text-gray-800 dark:text-gray-300 text-justify">
-          I&apos;m Rohan, a 2nd-year student and Full-Stack Developer who enjoys
+          I&apos;m Rohan, a 2nd-year student and Full-Stack Developer who likes
           building things from scratch and seeing an idea slowly turn into something
           real. I work across the stack, from{" "}
           <span className="text-blue-400 dark:text-blue-300 font-medium">
