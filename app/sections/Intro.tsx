@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import Profile from "@/public/profile.jpg";
+import ProfileLite from "@/public/Profile-lite.png"
 import Banner from "@/public/banner.png";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Meteors } from "@/components/ui/meteors";
+import { useTheme } from "next-themes";
 
 const Intro = () => {
-
+  const { resolvedTheme } = useTheme();
   return (
     <section className="relative w-full overflow-hidden px-6 md:px-10 pt-20 pb-4">
 
@@ -38,9 +40,9 @@ const Intro = () => {
 
         <div className="flex flex-col md:flex-row items-center md:items-end gap-5 px-8">
 
-          <div className="rounded-full border-4 border-blue-300 p-2">
+          <div className="rounded-full border-4 border-blue-300 p-1">
             <Image
-              src={Profile}
+              src={resolvedTheme === "dark" ? Profile : ProfileLite}
               alt="Profile"
               sizes="100vw"
               className="h-25 w-25 md:h-30 md:w-30 rounded-full object-cover"
@@ -63,7 +65,7 @@ const Intro = () => {
           </div>
 
         </div>
-        <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:sleading-8 text-gray-700 dark:text-gray-300 text-justify">
+        <p className="mt-4 w-full text-base md:text-lg leading-relaxed md:sleading-8 text-gray-800 dark:text-gray-300 text-justify">
           Hey, I&apos;m <span className="text-black dark:text-white font-semibold">Rohan</span> — a 2nd-year student and Full-Stack Developer who likes turning random ideas into things that actually work. I enjoy building, experimenting, and learning by breaking things and figuring out how to fix them.
           <br />
           <br />
