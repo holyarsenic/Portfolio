@@ -29,8 +29,8 @@ const Projects = () => {
 
       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-10">Projects</h2>
 
-      <div className="columns-1 sm:columns-1 md:columns-1 lg:columns-2 gap-10 md:gap-4 px-2 md:px-0">
-        {ProjectCount.slice(0, 2).map((project, i) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-2">
+        {ProjectCount.slice(0, 4).map((project, i) => (
           <div key={i} className="mb-4 break-inside-avoid">
             <ProjectCard {...project} />
           </div>

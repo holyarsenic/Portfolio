@@ -1,6 +1,17 @@
 import { ProjectCardProps } from "./ProjectCard";
 
 const ProjectCount: ProjectCardProps[] = [
+   {
+    name: "Void",
+    title: "Gen AI",
+    description:
+      "Learning Phase",
+    image: "/Thumbnail.png",
+    tags: ["Nextjs", "Node.js", "React", "React Router", "Tailwind CSS", "Express", "MongoDb"],
+    gitHubLink: "https://github.com/holyarsenic/Void-AI",
+    isLive: false,
+    isBuilding: true
+  },
   {
     name: "Shuriken",
     title: "Full-Stack Social Web App",
@@ -32,7 +43,7 @@ const ProjectCount: ProjectCardProps[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://holyarsenic.github.io/Kanban-Board/",
     gitHubLink: "https://github.com/holyarsenic/Kanban-Board",
-    isLive: false,
+    isLive: true,
   },
   {
     name: "Pizza-Shop",
