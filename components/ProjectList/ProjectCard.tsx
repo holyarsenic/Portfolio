@@ -79,7 +79,7 @@ const ProjectCard = ({
         />
       </div>
 
-        <CardDescription className="h-20 text-black dark:text-gray-300 line-clamp-3 text-base leading-relaxed">
+        <CardDescription className="h-30 text-black dark:text-gray-300 line-clamp-3 text-base leading-relaxed">
           {description}
         </CardDescription>
 

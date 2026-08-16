@@ -29,7 +29,7 @@ const Projects = () => {
 
       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-10">Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-3 md:px-2">
         {ProjectCount.slice(0, 4).map((project, i) => (
           <div key={i} className="mb-4 break-inside-avoid">
             <ProjectCard {...project} />
