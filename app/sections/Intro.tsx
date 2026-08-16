@@ -6,10 +6,8 @@ import ProfileLite from "@/public/Profile-lite.png"
 import Banner from "@/public/banner.png";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Meteors } from "@/components/ui/meteors";
-import { useTheme } from "next-themes";
 
 const Intro = () => {
-  const { resolvedTheme } = useTheme();
   return (
     <section className="relative w-full overflow-hidden px-6 md:px-10 pt-20 pb-4">
 
@@ -42,10 +40,19 @@ const Intro = () => {
 
           <div className="rounded-full border-4 border-blue-300 p-1">
             <Image
-              src={resolvedTheme === "dark" ? Profile : ProfileLite}
+              src={ProfileLite}
               alt="Profile"
-              sizes="100vw"
-              className="h-25 w-25 md:h-30 md:w-30 rounded-full object-cover"
+              width={120}
+              height={120}
+              className="h-25 w-25 md:h-30 md:w-30 rounded-full object-cover dark:hidden"
+              />
+
+            <Image
+              src={Profile}
+              alt="Profile"
+              width={120}
+              height={120}
+              className="hidden h-25 w-25 md:h-30 md:w-30 rounded-full object-cover dark:block"
             />
           </div>
 
