@@ -2,10 +2,10 @@ import { ProjectCardProps } from "./ProjectCard";
 
 const ProjectCount: ProjectCardProps[] = [
    {
-    name: "Void",
-    title: "Gen AI",
+    name: "Void UI",
+    title: "AI-Powered UI Component Library",
     description:
-      "Learning Phase",
+      "Generate beautiful, production-ready UI components from simple prompts. Build, customize, preview, and save components with AI.",
     image: "/Thumbnail.png",
     tags: ["Nextjs", "Node.js", "React", "React Router", "Tailwind CSS", "Express", "MongoDb"],
     gitHubLink: "https://github.com/holyarsenic/Void-AI",
