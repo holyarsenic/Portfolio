@@ -69,13 +69,13 @@ const ProjectCard = ({
       </CardHeader>
 
       <div
-        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-transform group-hover:-translate-y-2 group-hover:border-blue-300 dark:group-hover:border-blue-300/80 cursor-pointer">
+        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-transform group-hover:-translate-y-2 group-hover:border-blue-300 dark:group-hover:border-blue-300/80 cursor-pointer rounded-sm">
         <Image
           src={image}
           alt={name}
           fill
           sizes="100vw"
-          className="h-full w-full object-cover p-1"
+          className="h-full w-full object-fill"
         />
       </div>
 
