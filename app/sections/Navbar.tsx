@@ -49,9 +49,9 @@ const Navbar = () => {
           </h4>
         </Link>
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-5">
 
-          <div className="hidden gap-1 md:flex">
+          <div className="hidden gap-5 md:flex">
             {navLinks.map((link) =>
               link.href.startsWith("#") ? (
                 <a
@@ -75,11 +75,11 @@ const Navbar = () => {
             )}
           </div>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center">
             <AnimatedThemeToggler
               theme={resolvedTheme === "dark" ? "dark" : "light"}
               onThemeChange={(newTheme) => setTheme(newTheme)}
-              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full p-2 transition-colors hover:bg-muted"/>
+              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full p-2 transition-colors hover:bg-blue-300"/>
 
             <button
               type="button"
