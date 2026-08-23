@@ -52,14 +52,27 @@ const Navbar = () => {
         <div className="flex items-center">
 
           <div className="hidden gap-1 md:flex">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="rounded-full px-4 py-2 text-base font-name transition-colors hover:bg-muted hover:text-foreground">
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="text-base font-name transition-colors hover:text-blue-300"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="text-base font-name transition-colors hover:text-blue-300"
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
           </div>
 
           <div className="flex items-center gap-1">
