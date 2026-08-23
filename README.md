@@ -1,13 +1,18 @@
-# Next.js Project
 
-This is a [Next.js](https://nextjs.org) project initialized with `create-next-app`, using the App Router and TypeScript.
+# 💻 Next.js Developer Portfolio
+
+A modern, interactive developer portfolio built with [Next.js](https://nextjs.org) (App Router), TypeScript, and Tailwind CSS. It showcases projects, skills, and GitHub contributions with smooth animations and a polished user experience.
 
 ---
-
 ## 🚀 Getting Started
 
-1. Start the development server:
-   ```bash
+1. Clone the repository and install dependencies:
+   bash
+   npm install
+   
+
+2. Start the development server:
+   bash
    npm run dev
    # or
    yarn dev
@@ -15,20 +20,22 @@ This is a [Next.js](https://nextjs.org) project initialized with `create-next-ap
    pnpm dev
    # or
    bun dev
-   ```
+   
 
-2. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-3. Edit the main page at `app/page.tsx` – changes auto-refresh in real time.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
 ---
-
 ## 🛠 Features
 
-- **Font Optimization**: Uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) with [Geist](https://vercel.com/font) for Vercel's optimized font loading.
+- **Interactive UI Components**: Features custom magnetic buttons, flip words, meteor effects, and corner buttons.
+- **GitHub Contribution Graph**: Integrated GitHub activity visualization (`GithubGraph.tsx`).
+- **Dynamic Project Showcase**: Displays projects with interactive cards and a project counter.
+- **Smooth Scrolling**: Enhanced navigation with custom smooth scrolling.
+- **Dark/Light Mode**: Fully integrated theme switching with an animated theme toggler.
+- **View Counter**: Tracks and displays page views dynamically.
+- **Responsive Sections**: Organized into modular sections including Intro, Tech Stack, Projects, Quote, Connect, and Contact.
 
 ---
-
 ## 📚 Resources
 
 - [Next.js Documentation](https://nextjs.org/docs) – Official API reference and guides  
