@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Profile from "@/public/profile.jpg";
-import ProfileLite from "@/public/Profile-lite.png"
+import ProfileLite from "@/public/Profile-lite.png";
 import Banner from "@/public/banner.png";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Meteors } from "@/components/ui/meteors";
@@ -21,15 +21,13 @@ const Intro = () => {
             maxDelay={2.5}
           />
         </div>
-
-       
+        
         <Image
           src={Banner}
           alt="Banner"
           loading="eager"
           className="z-10 w-full h-full object-cover"
         />
-
       
         <div className="absolute inset-0 z-20 bg-linear-to-t from-blue-50 via-blue-50/10 dark:from-black/95 dark:via-black/10 to-transparent" />
       </div>

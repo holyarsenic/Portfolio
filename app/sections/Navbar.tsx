@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Profile from "@/public/profile.jpg";
+import ProfileLite from "@/public/Profile-lite.png";
 
 const AnimatedThemeToggler = dynamic(
   () =>
@@ -36,11 +37,19 @@ const Navbar = () => {
         >
           <div className="relative h-10 w-10 overflow-hidden rounded-xl">
             <Image
+              src={ProfileLite}
+              alt="Profile"
+              fill
+              sizes="40px"
+              className="dark:hidden rounded-xl object-cover transition-transform border-2 border-blue-300 duration-200 group-hover:scale-90 "
+            />
+
+            <Image
               src={Profile}
               alt="Profile"
               fill
               sizes="40px"
-              className="rounded-xl object-cover transition-transform border-2 border-blue-300 duration-200 group-hover:scale-90"
+              className="hidden dark:block rounded-xl object-cover transition-transform border-2 border-blue-300 duration-200 group-hover:scale-90 "
             />
           </div>
 
@@ -79,7 +88,7 @@ const Navbar = () => {
             <AnimatedThemeToggler
               theme={resolvedTheme === "dark" ? "dark" : "light"}
               onThemeChange={(newTheme) => setTheme(newTheme)}
-              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full p-2 transition-colors hover:bg-blue-300"/>
+              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full p-2 transition-colors hover:bg-blue-300/50"/>
 
             <button
               type="button"
