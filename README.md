@@ -31,7 +31,7 @@ A modern, interactive developer portfolio built with [Next.js](https://nextjs.or
 - **GitHub Contribution Graph**: Integrated GitHub activity visualization (`GithubGraph.tsx`).
 - **Dynamic Project Showcase**: Displays projects with interactive cards and a project counter.
 - **Smooth Scrolling**: Enhanced navigation with custom smooth scrolling.
-- **Dark/Light Mode**: Fully integrated theme switching with an animated theme toggler.
+- **Dark/Light Mode**: Fully integrated theme switching with an animated theme toggler, featuring adaptive profile images (`ProfileLite` and `Profile`) optimized for light and dark themes in both the Navbar and Intro sections.
 - **View Counter**: Tracks and displays page views dynamically.
 - **Responsive Sections**: Organized into modular sections including Intro, Tech Stack, Projects, Quote, Connect, and Contact.
 
