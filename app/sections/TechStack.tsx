@@ -25,7 +25,8 @@ import {
   SiVite,
   SiVercel,
   SiPostman,
-  SiGreensock 
+  SiGreensock,
+  SiFramer
 } from "react-icons/si";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -74,6 +75,11 @@ const stackItems: StackItem[] = [
   {
     title: "GSAP",
     icon: <SiGreensock />,
+    type: "frontend"
+  },
+  {
+    title: "Motion",
+    icon: <SiFramer />,
     type: "frontend"
   },
   {
