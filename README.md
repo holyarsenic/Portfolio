@@ -33,6 +33,7 @@ A modern, interactive developer portfolio built with [Next.js](https://nextjs.or
 - **Smooth Scrolling**: Enhanced navigation with custom smooth scrolling.
 - **Dark/Light Mode**: Fully integrated theme switching with an animated theme toggler, featuring adaptive profile images (`ProfileLite` and `Profile`) optimized for light and dark themes in both the Navbar and Intro sections.
 - **View Counter**: Tracks and displays page views dynamically.
+- **Performance & Analytics**: Integrated Vercel Analytics and Vercel Speed Insights for real-time performance monitoring and visitor insights.
 - **Responsive Sections**: Organized into modular sections including Intro, Tech Stack, Projects, Quote, Connect, and Contact.
 
 ---
