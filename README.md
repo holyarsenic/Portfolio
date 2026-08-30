@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio</h1>
+<h1 align="center">PORTFOLIO</h1>
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" height="40" alt="Next.js" />
