@@ -1,8 +1,8 @@
 import { FaQuoteLeft } from "react-icons/fa";
 
 const quote = {
-  text: "If it doesn't Challenge you, it doesn't Change you!!",
-  author: "Fred DeVito",
+  text: "A smooth sea never made a skilled sailor.",
+  author: "Franklin D. Roosevelt",
 };
 
 const Quote = () => {
