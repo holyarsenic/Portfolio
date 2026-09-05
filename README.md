@@ -4,10 +4,7 @@
 ## ABOUT
 
 A personal portfolio and a place for things I'm working on.
-
 Based around web development, design, and whatever I'm currently exploring.
-
-<br />
 
 ## STACK
 
@@ -26,8 +23,6 @@ Based around web development, design, and whatever I'm currently exploring.
 <p align="center">
   <sub>Next.js · React · TypeScript · Tailwind · shadcn/ui</sub>
 </p>
-
-<br />
 
 ## NOW
 
