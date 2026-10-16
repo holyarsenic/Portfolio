@@ -5,13 +5,13 @@ const ProjectCount: ProjectCardProps[] = [
     name: "Void UI",
     title: "AI-Powered UI Component Library",
     description:
-      "Generate beautiful, production-ready UI components from simple prompts. Build, customize, preview, and save components with AI.",
-    image: "/Project.png",
+      "Void UI — creates polished, animated interfaces from simple prompts, turning your ideas into interactive experiences with ready-to-use components and smooth motion.",
+    image: "/Project5.png",
     tags: ["Nextjs", "Gemini", "Motion", "React Router", "Tailwind CSS", "Nodejs", "Express", "MongoDb"],
     liveLink: "https://voidui-temp.vercel.app/",
     gitHubLink: "https://github.com/holyarsenic/Void-AI",
     isLive: true,
-    isBuilding: true
+    isBuilding: false
   },
   {
     name: "Shuriken",
