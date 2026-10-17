@@ -6,7 +6,7 @@ import TechStack from "./sections/TechStack";
 import FooterContactSection from "./sections/Connect";
 import Quote from "./sections/Quote";
 import Footer from "./sections/Footer";
-import Navbar from "./sections/Navbar";
+import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
   return (
