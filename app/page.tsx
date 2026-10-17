@@ -14,6 +14,7 @@ export default function Home() {
         
         <Navbar />
 
+        <div className="fixed bottom-0 left-0 w-full h-10 bg-linear-to-t z-50 from-blue-100/90 dark:from-black/80 to-transparent pointer-events-none"/>
         <Container>
           <Intro />
         </Container>
