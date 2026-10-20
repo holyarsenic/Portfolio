@@ -1,12 +1,6 @@
 import { Button } from "../ui/button";
 import Image from "next/image";
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
+import {Card, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
 import Link from "next/link";
 import {FaGithub} from "react-icons/fa6";
 import { CiGlobe } from "react-icons/ci";
@@ -69,7 +63,7 @@ const ProjectCard = ({
       </CardHeader>
 
       <div
-        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-transform group-hover:-translate-y-2 group-hover:border-blue-300 dark:group-hover:border-blue-300/80 cursor-pointer rounded-sm">
+        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-transform hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-300/80 cursor-pointer rounded-sm">
         <Image
           src={image}
           alt={name}
@@ -101,13 +95,13 @@ const ProjectCard = ({
         <div className="flex items-center gap-1.5">
           {gitHubLink && (
             <Link href={gitHubLink} target="_blank">
-              <Button><FaGithub /></Button>
+              <Button className="cursor-pointer"><FaGithub /></Button>
             </Link>
           )}
 
           {liveLink && (
             <Link href={liveLink} target="_blank">
-              <Button><CiGlobe /></Button>
+              <Button className="cursor-pointer"><CiGlobe /></Button>
             </Link>
           )}
         </div>

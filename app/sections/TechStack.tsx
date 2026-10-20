@@ -3,33 +3,10 @@
 import MagneticButton from "@/components/ui/magnetic-button"
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import {
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaGithub,
-  FaHtml5,
-  FaCss3Alt,
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiTypescript,
-  SiJavascript,
-  SiShadcnui,
-  SiExpress,
-  SiMongodb,
-  SiCloudinary,
-  SiC,
-  SiCplusplus,
-  SiVite,
-  SiVercel,
-  SiPostman,
-  SiGreensock,
-  SiFramer
-} from "react-icons/si";
+import {FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaDocker } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiJavascript, SiShadcnui, SiExpress, SiMongodb, SiCloudinary, SiC, SiCplusplus, SiVite, SiVercel, SiPostman, SiGreensock, SiFramer, SiPrisma  } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
-
 interface StackItem {
   title: string;
   icon: React.ReactNode;
@@ -113,6 +90,21 @@ const stackItems: StackItem[] = [
     type: "backend",
   },
   {
+    title: "Postgresql",
+    icon: <BiLogoPostgresql />,
+    type: "backend",
+  },
+  {
+    title: "Prisma",
+    icon: <SiPrisma />,
+    type: "backend",
+  },
+  {
+    title: "Docker",
+    icon: <FaDocker />,
+    type: "backend"
+  },
+  {
     title: "Cloudinary",
     icon: <SiCloudinary />,
     type: "backend",
@@ -178,7 +170,7 @@ const TechStack = () => {
         </Button>
 
         {dropdownOpen && (
-          <div className="absolute right-0 top-11 z-50 w-40 h-47 overflow-hidden rounded-xl border border-white/10 bg-gray-50 dark:bg-[#111] p-1.5 shadow-xl">
+          <div className="absolute right-0 top-11 z-50 w-40 h-47 overflow-hidden rounded-xl border border-white/20 bg-gray-50 dark:bg-[#111] p-1.5 shadow-xl">
             {filters.map((filter, i) => (
               <button
                 key={i}
@@ -189,7 +181,7 @@ const TechStack = () => {
                 className={`w-full px-3 py-2 text-left text-sm transition-colors ${
                   activeFilter === filter.value
                     ? "bg-blue-300/10 text-blue-300"
-                    : "text-black/60 dark:text-white/60 dark:hover:bg-white/5 hover:bg-black/5 dark:hover:text-white hover:text-black/60"
+                    : "text-black/70 dark:text-white/70 dark:hover:bg-white/5 hover:bg-black/5 dark:hover:text-white hover:text-black/60"
                 }`}
               >
                 {filter.label}
@@ -204,7 +196,7 @@ const TechStack = () => {
           <MagneticButton
             key={i}
             variant="outline"
-            className="h-8 md:h-10 px-4 bg-blue-100 text-black/50 dark:text-white/50 transition-all hover:text-blue-300 hover:shadow-[0_0_20px_rgba(147,197,253,0.08)]">
+            className="h-8 md:h-10 px-4 bg-blue-100 text-black/70 dark:text-white/70 transition-all hover:text-blue-300 rounded-none">
             <div className="flex items-center gap-2">
               <span className="text-sm md:text-lg">
                 {stack.icon}

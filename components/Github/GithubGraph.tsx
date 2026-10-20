@@ -21,7 +21,7 @@ const GithubGraph = () => {
 
   const { resolvedTheme } = useTheme()
   return (
-    <div className="relative flex flex-col w-full justify-center items-center gap-4 border rounded-2xl p-5 overflow-x-auto mt-4">
+    <div className="relative flex flex-col w-full justify-center items-center gap-4 border border-foreground/20 rounded-2xl p-5 overflow-x-auto mt-4">
 
       <div className="w-full text-xl md:text-2xl font-bold text-blue-300">
           GitHub Activity

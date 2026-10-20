@@ -9,7 +9,7 @@ const ContactButton = ({className, children}: ButtonPrimitive.Props) => {
       <motion.button
         initial="initial"
         whileHover="hover"
-        className={`group w-full relative z-10 overflow-hidden border border-gray-500 px-3 py-2 text-base text-gray-500 transition-colors duration-700 hover:text-white dark:hover:text-black cursor-pointer ${className}`}>
+        className={`group w-full relative z-10 overflow-hidden border border-foreground/70 px-3 py-2 text-base text-foreground/70 transition-colors duration-700 hover:text-white dark:hover:text-black cursor-pointer ${className}`}>
         <span className="relative z-10 flex items-center justify-center gap-2">{children}</span>
 
         <div className="absolute inset-0 -bottom-0.75 -right-px z-0 overflow-hidden">
