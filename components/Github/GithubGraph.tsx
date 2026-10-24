@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
+import { motion } from "motion/react"
 const GitHubCalendar = dynamic(
   () =>
     import("react-github-calendar").then(
@@ -21,7 +22,12 @@ const GithubGraph = () => {
 
   const { resolvedTheme } = useTheme()
   return (
-    <div className="relative flex flex-col w-full justify-center items-center gap-4 border border-foreground/20 rounded-2xl p-5 overflow-x-auto mt-4">
+    <motion.div 
+    className="relative flex flex-col w-full justify-center items-center gap-4 border border-foreground/20 rounded-2xl p-5 overflow-x-auto mt-4"
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.1 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}>
 
       <div className="w-full text-xl md:text-2xl font-bold text-blue-300">
           GitHub Activity
@@ -50,7 +56,7 @@ const GithubGraph = () => {
             ]
           }}
       />
-    </div>
+    </motion.div>
   );
 };
 

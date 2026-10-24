@@ -71,7 +71,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.7 }}>
+        transition={{ duration: 0.5 }}>
         <Link href="/Project">
           <Button className="bg-transparent hover:bg-transparent text-base md:text-lg text-blue-400 dark:text-blue-300 font-name">
             View all Project
