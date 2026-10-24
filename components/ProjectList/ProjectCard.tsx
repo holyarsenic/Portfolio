@@ -63,7 +63,7 @@ const ProjectCard = ({
       </CardHeader>
 
       <div
-        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-transform hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-300/80 cursor-pointer rounded-sm">
+        className="relative w-full h-60 md:h-72 overflow-hidden border-4 border-blue-200 dark:border-gray-600/30 bg-blue-50 dark:bg-[#111] transition-all duration-300 hover:-translate-y-2 hover:border-blue-300 dark:hover:border-blue-300/80 cursor-pointer rounded-sm">
         <Image
           src={image}
           alt={name}

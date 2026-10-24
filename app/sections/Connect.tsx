@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import CornerButton from "@/components/ui/corner-button";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -27,7 +30,12 @@ const connectHandle = [
 
 const connect = () => {
   return (
-    <section className="relative w-full overflow-hidden px-6 md:px-10 py-10">
+    <motion.section 
+    className="relative w-full overflow-hidden px-6 md:px-10 py-10"
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.1 }}
+    transition={{ duration: 0.7, ease: "easeOut"}}>
       <h2 className="w-full text-2xl md:text-3xl font-bold text-blue-300 mb-10">Work with me</h2>  
         
         <div className="w-full pt-4 px-0 md:px-4">
@@ -66,7 +74,7 @@ const connect = () => {
         </div>
         
       </div>
-    </section>
+    </motion.section>
   );
 }
 

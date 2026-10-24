@@ -4,12 +4,18 @@ import Image from "next/image";
 import Profile from "@/public/profile.jpg";
 import ProfileLite from "@/public/Profile-lite.png";
 import Banner from "@/public/banner.png";
+import { motion } from "motion/react"
 import { FlipWords } from "@/components/ui/flip-words";
 import { Meteors } from "@/components/ui/meteors";
 
 const Intro = () => {
   return (
-    <section className="relative w-full overflow-hidden px-6 md:px-10 pt-20 pb-4">
+    <motion.section 
+    className="relative w-full overflow-hidden px-6 md:px-10 pt-20 pb-4"
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.1 }}
+    transition={{ duration: 0.7, ease: "easeOut"}}>
 
       <div className="relative h-full md:h-60 w-full overflow-hidden">
       
@@ -89,7 +95,7 @@ const Intro = () => {
           random thoughts into something that actually works.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

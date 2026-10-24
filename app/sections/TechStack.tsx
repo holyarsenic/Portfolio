@@ -7,6 +7,7 @@ import {FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaDocker } fr
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiJavascript, SiShadcnui, SiExpress, SiMongodb, SiCloudinary, SiC, SiCplusplus, SiVite, SiVercel, SiPostman, SiGreensock, SiFramer, SiPrisma  } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
+import { motion } from "motion/react";
 interface StackItem {
   title: string;
   icon: React.ReactNode;
@@ -150,7 +151,12 @@ const TechStack = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <section className="min-h-h-110 md:min-h-67 relative w-full overflow-hidden px-6 md:px-10 py-10">
+    <motion.section 
+    className="min-h-h-110 md:min-h-67 relative w-full overflow-hidden px-6 md:px-10 py-10"
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.1 }}
+    transition={{ duration: 0.7, ease: "easeOut"}}>
       <div className="relative w-full flex justify-between items-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-300">
           Tech Stack
@@ -209,7 +215,7 @@ const TechStack = () => {
           </MagneticButton>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
