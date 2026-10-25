@@ -1,31 +1,24 @@
-<h1 align="center">PORTFOLIO</h1>
-<br />
+# Portfolio
 
-## ABOUT
+**My personal portfolio.**
 
-A personal portfolio and a place for things I'm working on.
-Based around web development, design, and whatever I'm currently exploring.
+[Live site](https://www.holyarsenic.my.id/) | [Contact](#contact)
 
-## STACK
+## About
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="38" height="38" alt="Next.js" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="38" height="38" alt="React" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="38" height="38" alt="TypeScript" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="38" height="38" alt="Tailwind CSS" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://ui.shadcn.com/favicon.ico" width="38" height="38" alt="shadcn/ui" />
-</p>
+This is the source code of my personal portfolio website.
 
-<p align="center">
-  <sub>Next.js · React · TypeScript · Tailwind · shadcn/ui</sub>
-</p>
+## Run locally
 
-## NOW
+```bash
+git clone https://github.com/holyarsenic/<your-portfolio-repo>.git
+cd <your-portfolio-repo>
+pnpm install
+pnpm dev
+```
 
-Currently learning, experimenting, and working on new things.
+Open `http://localhost:3000`.
 
-<br />
+## Contact
+
+[Email](mailto:rohankamat7986@gmail.com) | [GitHub](https://github.com/holyarsenic) | [LinkedIn](https://www.linkedin.com/in/rohankt4/) | [X](https://x.com/holyarsenic) | [Resume](https://drive.google.com/file/d/1ud42VwVsxRU00Ejw-zAwkVrk9OlQlRze/view?usp=sharing)
