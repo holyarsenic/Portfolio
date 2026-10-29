@@ -39,6 +39,7 @@ const Navbar = () => {
               alt="Profile"
               fill
               sizes="40px"
+              priority
               className="rounded-xl border-2 border-blue-300 object-cover transition-transform duration-200 group-hover:scale-90 dark:hidden"/>
 
             <Image
@@ -46,6 +47,7 @@ const Navbar = () => {
               alt="Profile"
               fill
               sizes="40px"
+              priority
               className="hidden rounded-xl border-2 border-blue-300 object-cover transition-transform duration-200 group-hover:scale-90 dark:block"/>
           </div>
 

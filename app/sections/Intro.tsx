@@ -48,14 +48,18 @@ const Intro = () => {
               alt="Profile"
               width={120}
               height={120}
+              priority
+              loading="eager"
               className="h-25 w-25 md:h-30 md:w-30 rounded-full object-cover dark:hidden"
-              />
+            />
 
             <Image
               src={Profile}
               alt="Profile"
               width={120}
               height={120}
+              priority
+              loading="eager"
               className="hidden h-25 w-25 md:h-30 md:w-30 rounded-full object-cover dark:block"
             />
           </div>
