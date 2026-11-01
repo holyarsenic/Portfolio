@@ -33,7 +33,7 @@ const contactItems = [
 
 const Contact = () => {
   return (
-    <motion.section className="relative w-full overflow-hidden px-6 md:px-10 pt-4 pb-10" id="contact"
+    <motion.section className="relative w-full px-6 md:px-10 pt-4 pb-10" id="contact"
     initial={{ opacity: 0, y: 10 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.1 }}

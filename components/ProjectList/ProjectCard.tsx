@@ -68,7 +68,7 @@ const ProjectCard = ({
           src={image}
           alt={name}
           fill
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 450px"
           className="h-full w-full object-fill"
         />
       </div>
