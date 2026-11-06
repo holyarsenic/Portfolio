@@ -8,7 +8,7 @@ import ProjectCount from "@/components/ProjectList/ProjectCount";
 const Projects = () => {
   return (
     <Container>
-      <div className="min-h-screen relative w-full overflow-hidden px-4 md:px-10 py-10">
+      <div className="min-h-dvh relative w-full overflow-hidden px-4 md:px-10 py-10">
         <div className="w-full flex items-center justify-between mb-8">
           
           <Link

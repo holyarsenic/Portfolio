@@ -10,7 +10,7 @@ import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen justify-center overflow-hidden flex-col">
+    <div className="relative flex min-h-dvh justify-center overflow-hidden flex-col">
         
         <Navbar />
 

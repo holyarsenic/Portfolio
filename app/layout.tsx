@@ -104,7 +104,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${archivoBlack.variable} ${bitcount.variable} ${adventPro.variable} antialiased`}
     >
-      <body className="min-h-screen">
+      <body className="min-h-dvh">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
