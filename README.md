@@ -1,23 +1,6 @@
-# Portfolio
-
-**My personal portfolio.**
+## My personal portfolio
 
 [Live site](https://www.holyarsenic.my.id/) | [Contact](#contact)
-
-## About
-
-This is the source code of my personal portfolio website.
-
-## Run locally
-
-```bash
-git clone https://github.com/holyarsenic/<your-portfolio-repo>.git
-cd <your-portfolio-repo>
-pnpm install
-pnpm dev
-```
-
-Open `http://localhost:3000`.
 
 ## Contact
 
