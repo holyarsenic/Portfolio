@@ -17,6 +17,9 @@ const bitcount = Bitcount_Prop_Single({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-bitcount",
+  display: "swap",
+  fallback: ["monospace"],
+  adjustFontFallback: false,
 });
 
 const adventPro = Advent_Pro({
