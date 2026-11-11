@@ -27,7 +27,7 @@ const contactItems = [
   {
     icon: <GrDocumentText />,
     text: "Resume",
-    url: "https://drive.google.com/file/d/1ud42VwVsxRU00Ejw-zAwkVrk9OlQlRze/view?usp=sharing",
+    url: "https://docs.google.com/document/d/1quo9FFRrKwspShgOAD7f9eaLSvk-xmnu/edit?usp=sharing&ouid=116198069867170641290&rtpof=true&sd=true",
   },
 ];
 
