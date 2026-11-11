@@ -1,6 +1,6 @@
 ## My personal portfolio
 
-[Live site](https://www.holyarsenic.my.id/) | [Contact](#contact)
+[Live site](https://www.holyarsenic.my.id/)
 
 ## Contact
 
